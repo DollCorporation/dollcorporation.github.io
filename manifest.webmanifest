@@ -1,0 +1,17 @@
+{
+    "name": "Doll Corporation",
+    "short_name": "DollCorp",
+    "description": "Your fantasies come true.",
+    "display":"standalone",
+    "start_url": "/",
+    "theme_color":"#e84b71",
+    "background_color":"#151515",
+    "shortcuts": [
+        {
+            "name": "Doll Corporation",
+            "short_name": "DollCorp",
+            "description": "Your fantasies come true.",
+            "url": "/"
+        }
+    ]
+}

@@ -1,0 +1,328 @@
+:root {
+    --accent: #ff0080;
+    --paragraph: #fa51a6;
+    --secondary: #05d7df;
+    --shadow: #fa49dc20;
+    --background: #31182f;
+    --containerBackground: #20041c;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    text-rendering: optimizeLegibility;
+    color: #cfcfcf;
+    background-color: #151515;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    background-color: #151515;
+    font-family: 'Roboto Mono', sans-serif;
+    margin: 0;
+    margin-bottom: 20px;
+}
+ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+ul li {
+    margin: 10px 0px;
+}
+
+#home, #about, #files, #contact {
+    display: block;
+}
+
+#about, #files, #contact {
+    padding-top: 120px;
+}
+
+.container::before {
+    color: var(--accent) !important;
+}
+
+#welcome {
+    align-items: center;
+    justify-content: center; /* INTERNET EXPLORER */
+    justify-content: space-evenly;
+    color: var(--accent);
+    display: flex;
+    margin: auto;
+    margin-top: 11vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 830px;
+    height: calc(100vh - 22vh - 40px);
+    border: 1px solid var(--accent);
+    background-color: var(--containerBackground);
+    box-shadow: 6px 6px 0px var(--shadow);
+}
+
+#welcome img {
+    display: block;
+    height: 90%;
+}
+
+#title {
+    display: block;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+#subtitle {
+    display: block;
+    margin-top: 10px;
+}
+
+#welcome table {
+    color: var(--accent);
+    text-decoration: underline;
+    border-collapse: collapse;
+    margin-top: 60px;
+    margin-left: -10px;
+}
+
+#welcome table td a {
+    cursor: pointer;
+    transition: text-shadow 0.2s ease-in-out;
+    margin: 0px 10px;
+    color: var(--accent);
+}
+
+#welcome table td a:hover{
+    text-shadow: 0px 0px 2px var(--accent);
+}
+
+#sidenote {
+    display: block;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+#about .container .text span {
+    float: right;
+}
+
+.container {
+    color: var(--paragraph);
+    margin: auto;
+    margin-top: 120px;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid var(--accent);
+    background-color: var(--containerBackground);
+    box-shadow: 6px 6px 0px var(--shadow);
+}
+
+#about .container::before {
+    content: "ABOUT";
+    font-size: 24px;
+    display: block;
+    background-color: var(--containerBackground);
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -21px;
+    border: 1px solid var(--accent);
+    box-shadow: 6px 6px 0px var(--shadow);
+    padding: 10px 20px;
+}
+
+.text {
+    display: block;
+    margin: 0;
+}
+
+.parenthesis {
+    color: var(--secondary) !important;
+    font-style: italic !important;
+}
+
+.hidden {
+    background-color: var(--accent) !important;
+    color: var(--accent) !important;
+}
+
+p b.hidden {
+    padding: 0px 5px;
+}
+
+.hidden:hover {
+    background-color: var(--secondary) !important;
+    color: #000000 !important;
+}
+
+#about .text {
+    padding-bottom: 20px;
+}
+
+#files .container::before {
+    content: "TRAINING MODULES";
+    font-size: 24px;
+    display: block;
+    background-color: var(--containerBackground);
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -21px;
+    border: 1px solid var(--accent);
+    box-shadow: 6px 6px 0px var(--shadow);
+    padding: 10px 20px;
+}
+
+.list a {
+    text-decoration: none;
+    color: var(--accent);
+    transition: text-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.list li {
+    padding-top: 30px;
+}
+
+.list a:hover{
+    text-shadow: 0px 0px 2px var(--accent);
+}
+
+.list li.toggle .toggle-content {
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.35s;
+}
+
+.list li.toggle:hover .toggle-content {
+    height: fit-content;
+    filter: none;
+    transform: scaleY(1);
+    padding-bottom: 30px;
+}
+
+#contact .container::before {
+    content: "CONTACT";
+    font-size: 24px;
+    display: block;
+    background-color: var(--containerBackground);
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -21px;
+    border: 1px solid var(--accent);
+    box-shadow: 6px 6px 0px var(--shadow);
+    padding: 10px 20px;
+}
+
+#contact img {
+    float: right;
+}
+
+#safety {
+    padding-top: 120px;
+}
+
+#safety .container::before {
+    content: "SAFETY";
+    font-size: 24px;
+    display: block;
+    background-color: var(--containerBackground);
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -21px;
+    border: 1px solid var(--accent);
+    box-shadow: 6px 6px 0px var(--shadow);
+    padding: 10px 20px;
+}
+
+#schedule {
+    padding-top: 120px;
+}
+
+#schedule .container::before {
+    content: "SCHEDULE";
+    font-size: 24px;
+    display: block;
+    background-color: var(--containerBackground);
+    position: absolute;
+    margin-top: -90px;
+    margin-left: -21px;
+    border: 1px solid var(--accent);
+    box-shadow: 6px 6px 0px var(--shadow);
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 888px){
+
+    #welcome {
+        display: flex;
+        max-height: 80vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #welcome #welcome-container {
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    #welcome img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    #welcome, .container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #welcome-container {
+        text-align: center;
+    }
+
+    #title {
+        padding: 0px 10px;
+    }
+
+    #welcome-container table {
+        margin: auto;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #welcome table td a {
+        margin: 0px 5px;
+    }
+
+    #sidenote {
+        padding: 0px 5px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #welcome td {
+        display: block;
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+}
+
+
