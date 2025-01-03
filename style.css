@@ -280,6 +280,8 @@ p b.hidden {
     #welcome #welcome-container {
         text-align: center;
         padding-top: 60px;
+        padding-left: 0;
+        padding-bottom: 60px;
     }
 
     #welcome img {
@@ -302,30 +304,19 @@ p b.hidden {
     #title {
         padding: 0px 10px;
     }
-
-    #welcome-container table {
-        margin: auto;
-        margin-top: 40px;
-    }
 }
 
 @media screen and (max-width: 380px){
-    #welcome table td a {
-        margin: 0px 5px;
-    }
+
+    #welcome img {
+        height: 40%;
+    };
+
+    #welcome 
 
     #sidenote {
         padding: 0px 5px;
     }
-}
-
-@media screen and (max-width: 320px){
-    #welcome td {
-        display: block;
-        text-align: center;
-        padding: 5px 0px;
-    }
-
 }
 
 
